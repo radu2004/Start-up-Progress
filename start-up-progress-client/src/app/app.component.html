@@ -5,7 +5,8 @@
 </style>
 <div class="main">
   <h1>My startup progress</h1>
-  <p>The OrderNo reprenets the order number (rank) of the item (phase or task) you want to add.</p>
+  <p>The OrderNo reprenets the order number (rank) of the item (phase or task) you want to add. If it is not privded it will add the item to the end of the existing list.</p>
+  <p>The checkboxes represent the status of a task/phase not the selection</p>
   <button class="btn-primary"
     (click)="addPhase(newPhaseName.value, newPhaseOrderNo.value); newPhaseName.value = ''; newPhaseOrderNo.value = ''">Add Phase</button>
   <input #newPhaseName placeholder="Phase Name" class="lg-text-input"
